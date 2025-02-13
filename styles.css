@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url(Pics/Fondo_HTML.png);
+  background-image: url(Pics/BG_ZOOM_ONE_ESP_\(2\)[1]11.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,6 +9,30 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+}
+
+.banner {
+  background-color: #4CAF50; /* Color de fondo del banner */
+  color: white; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 20px; /* Espaciado interno */
+}
+
+header.banner {
+  position: fixed; /* Fija el banner superior */
+  top: 0;
+  width: 100%;
+}
+
+footer.banner {
+  position: fixed; /* Fija el banner inferior */
+  bottom: 0;
+  width: 100%;
+}
+
+body {
+  margin-top: 70px; /* Ajusta el margen superior del contenido */
+  margin-bottom: 70px; /* Ajusta el margen inferior del contenido */
 }
 
 .card {
@@ -93,19 +117,37 @@ body {
   font-weight: bold; /* Resaltar el texto */
 }
 
+.avatar {
+  width: 50px; /* Tamaño del avatar */
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.username {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
 
 /* Estilos adicionales para dispositivos móviles */
 @media (max-width: 600px) {
   .card {
-    padding: 15px;
-    margin: 10px;
+      padding: 15px;
+      margin: 10px;
   }
 
   .card-title {
-    font-size: 20px;
+      font-size: 20px;
   }
 
   .button {
-    padding: 8px;
+      padding: 8px;
   }
 }
