@@ -1,35 +1,35 @@
-<!-- HTML -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Margin Kalk App</title>
+  <title>Margin Kalk App</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="card">
     <div class="card-header">
-      <h2 class="card-title"> CALCULADORA DE MARGEN</h2>
-      <p class="card-description"> Margen: Es el porcentaje de ganancia que se obtiene sobre el precio de venta </p>
+      <h2 class="card-title">CALCULADORA DE MARGEN</h2>
+      <p class="card-description">Margen: Es el porcentaje de ganancia que se obtiene sobre el precio de venta</p>
     </div>
     <div class="card-content">
       <div class="input-group">
-        <label for="cost">Precio de costo </label>
+        <label for="cost">Precio de costo</label>
         <input id="cost" type="text">
       </div>
       <div class="input-group">
-        <label for="sell-price">Precio de venta </label>
+        <label for="sell-price">Precio de venta</label>
         <input id="sell-price" type="text">
       </div>
       <div class="input-group">
-        <label for="percentage"> Utilidad </label>
+        <label for="percentage">Utilidad</label>
         <input id="percentage" type="text">
       </div>
       <p id="error" class="error"></p>
       <button id="calculate-margin" class="button">Calcular Margen</button>
       <button id="calculate" class="button">Calcular Precio Final</button>
       <button id="calculate-iva" class="button">Calcular con 16% IVA</button>
+      <button id="reset" class="button">Reset</button> <!-- Botón Reset -->
       <div id="result-container" class="result-container" style="display: none;">
         <h3 class="result-title">Resultado</h3>
         <p id="result" class="result-description"></p>

@@ -1,4 +1,3 @@
-// JavaScript
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('calculate').addEventListener('click', function() {
     calculateResult(false);
@@ -10,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('calculate-margin').addEventListener('click', function() {
     calculateMargin();
+  });
+
+  document.getElementById('reset').addEventListener('click', function() {
+    resetFields();
   });
 });
 
@@ -61,4 +64,12 @@ function calculateMargin() {
   resultElement.textContent = margin.toFixed(2) + '%';
   errorElement.textContent = '';
   resultContainer.style.display = 'block';
+}
+
+function resetFields() {
+  document.getElementById('cost').value = '';
+  document.getElementById('sell-price').value = '';
+  document.getElementById('percentage').value = '';
+  document.getElementById('error').textContent = '';
+  document.getElementById('result-container').style.display = 'none';
 }
