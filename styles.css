@@ -1,38 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  background-image: url(Pics/Fondo.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-}
-
-.banner {
-  background-color: #4CAF50; /* Color de fondo del banner */
-  color: white; /* Color del texto */
-  text-align: center; /* Alineación del texto */
-  padding: 20px; /* Espaciado interno */
-}
-
-header.banner {
-  position: fixed; /* Fija el banner superior */
-  top: 0;
-  width: 100%;
-}
-
-footer.banner {
-  position: fixed; /* Fija el banner inferior */
-  bottom: 0;
-  width: 100%;
-}
-
-body {
-  margin-top: 70px; /* Ajusta el margen superior del contenido */
-  margin-bottom: 70px; /* Ajusta el margen inferior del contenido */
 }
 
 .card {
@@ -42,7 +15,6 @@ body {
   max-width: 400px;
   width: 100%;
   padding: 20px;
-  line-height: 1.6;
   margin: 20px; /* Espacio para móviles */
 }
 
@@ -62,6 +34,13 @@ body {
   font-size: 14px;
   color: #888;
   margin-bottom: 20px;
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 .input-group {
